@@ -35,16 +35,15 @@
         }
         return $randomArray;
     }
-
     $array1 = returnArray(40, 50, 200);
-    print_r($array1); // This should print the random array
+    print_r($array1);
 
     function sumArray($array){
         $sum = array_sum($array);
         $average = $sum / count($array);
         sort($array);
         $count = count($array);
-        
+        f
         // Median calculation
         if($count % 2 == 0) {
             $median = ($array[$count / 2 - 1] + $array[$count / 2]) / 2;
@@ -72,8 +71,7 @@
     }
 
     $statistics = sumArray($array1);
-    print_r($statistics); // This will print the calculated statistics
-
+    print_r($statistics);
     ?>
 </body>
 </html>
