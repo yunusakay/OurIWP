@@ -9,10 +9,13 @@ echo "<table>";
                 echo "<td>" . $row["userID"] . "</td>";
                 echo "<td>" . $row["userFullname"] . "</td>";
                 echo "<td>" . $row["userPassword"] . "</td>";
-                echo "<td>";                
-                echo "<a href='update.php?u_name=" . $row["userID"] . "' class='btn btn-upd'>Update</a> ";
-                
-                echo "<a href='delete.php?u_name=" . $row["userID"] . "' class='btn btn-del'>Delete</a>";
+                echo "<td>";    
+                echo "<td>" . $row["comment"] . "</td>";
+                echo "<td>";     
+               "<td>" . $row["toWho"] . "</td>";
+                echo "<td>";  
+                echo "<a href='update.php?u_id=" . $row["userID"] . "' class='btn btn-upd'>Update</a> ";
+                echo "<a href='delete.php?u_id=" . $row["userID"] . "' class='btn btn-del'>Delete</a>";
                 
                 echo "</td>";
                 echo "</tr>";
